@@ -39,7 +39,7 @@ Sample complex `.pre-commit-config.yaml`
           'path/to/schema.graphql',
           '--schema',
           'module.path.to.schema',
-          '--verbosity' # OR '-v'
+          '--verbosity', # OR '-v'
           '2', # Set the verbosity level {0,1,2,3}
         ]
 ```
