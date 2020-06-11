@@ -1,16 +1,9 @@
 import argparse
-import inspect
-import os
-import pathlib
-import re
 import shlex
 import subprocess
 import sys
 from typing import Optional
 from typing import Sequence
-from typing import Set
-from importlib import import_module
-from itertools import count
 
 
 def run_command(command: str) -> int:
@@ -33,10 +26,11 @@ def run_command(command: str) -> int:
     return rc
 
 
-def main(argv: Optional[Sequence[str]] = None):
+def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('--python-version', default='3.6')
-    parser.add_argument('--settings', default='')
+    parser.add_argument('--managepy-path', default='manage.py')
+    parser.add_argument('--settings', default=None)
     args = parser.parse_args(argv)
     
     command = 'python{} manage.py graphql_schema'.format(args.python_version)
