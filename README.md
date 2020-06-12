@@ -28,8 +28,6 @@ Sample complex `.pre-commit-config.yaml`
       - id: graphene-django-hook
         stages: [commit]
         args: [
-          '--managepy-path',
-          '/path/to/manage.py', # Defaults to: manage.py
           '--settings',
           'project.settings'. # Defaults to: DJANGO_SETTINGS_MODULE
           '--indent',
