@@ -28,7 +28,6 @@ def run_command(command: str) -> int:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument('--python-version', default='3.6')
     parser.add_argument('--indent', default=None)
     parser.add_argument('--out', default=None)
     parser.add_argument('--schema', default=None)
@@ -37,7 +36,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument('--settings', default=None)
     args = parser.parse_args(argv)
     
-    command = 'python{} {} graphql_schema'.format(args.python_version, args.managepy_path)
+    command = '{} {} graphql_schema'.format(sys.executable, args.managepy_path)
     
     if args.settings is not None:
         command += ' --settings={}'.format(args.settings)

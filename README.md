@@ -28,8 +28,6 @@ Sample complex `.pre-commit-config.yaml`
       - id: graphene-django-hook
         stages: [commit]
         args: [
-          '--python-version',
-          '3.6', # Defaults to: 3.6
           '--managepy-path',
           '/path/to/manage.py', # Defaults to: manage.py
           '--settings',
