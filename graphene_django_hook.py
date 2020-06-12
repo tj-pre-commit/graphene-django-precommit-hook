@@ -38,7 +38,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     args = parser.parse_args(argv)
     
     # TODO: Fix parsing arguments
-    command = '{} {} graphql_schema'.format(get_python_lib(), args.managepy_path or 'manage.py')
+    command = '{} {} graphql_schema'.format(get_python_lib().strip('/site-packages'), args.managepy_path or 'manage.py')
     
     if args.settings is not None:
         command += ' --settings={}'.format(args.settings)
