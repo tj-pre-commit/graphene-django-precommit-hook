@@ -7,5 +7,5 @@ has_missing() {
 }
 
 has_missing
-python manage.py graphql_schema;
+python manage.py graphql_schema
 has_missing
