@@ -14,7 +14,7 @@ Sample basic `.pre-commit-config.yaml`
 -   repo: https://github.com/jackton1/graphene-django-precommit-hook
     rev: v0.1.0
     hooks:
-      - id: graphene-django-precommit-hook
+      - id: graphene-django-hook
         stages: [commit]
 ```
 
@@ -25,7 +25,7 @@ Sample complex `.pre-commit-config.yaml`
 -   repo: https://github.com/jackton1/graphene-django-precommit-hook
     rev: v0.1.0
     hooks:
-      - id: graphene-django-precommit-hook
+      - id: graphene-django-hook
         stages: [commit]
         args: [
           '--python-version',
