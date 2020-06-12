@@ -32,11 +32,12 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument('--out', default=None)
     parser.add_argument('--schema', default=None)
     parser.add_argument('-v', '--verbosity', default=None)
-    parser.add_argument('--managepy-path', default='manage.py')
+    parser.add_argument('--managepy-path', default=None)
     parser.add_argument('--settings', default=None)
     args = parser.parse_args(argv)
     
-    command = './{} graphql_schema'.format(args.managepy_path)
+    # TODO: Fix parsing arguments
+    command = './{} graphql_schema'.format(args.managepy_path or 'manage.py')
     
     if args.settings is not None:
         command += ' --settings={}'.format(args.settings)
@@ -53,7 +54,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if args.verbosity is not None:
         command += ' --verbosity={}'.format(args.verbosity)
     
-    command = 'chmod +x {} && {}'.format(args.managepy_path, command)
+    run_command('chmod +x {}'.format(args.managepy_path or 'manage.py'))
     return run_command(command)
    
  
