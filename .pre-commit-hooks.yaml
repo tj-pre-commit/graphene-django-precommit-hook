@@ -1,7 +1,7 @@
 -   id: graphene-django-hook
     name: graphene django schema hook
     description: Generate graphql schema.
-    entry: python manage.py graphql_schema
+    entry: if [ $(git diff --cached --name-only | wc -l) -eq 1 ]; then echo "Unstaged changes" && exit 1; else python manage.py graphql_schema; fi
     language: system
     always_run: true
     pass_filenames: false
