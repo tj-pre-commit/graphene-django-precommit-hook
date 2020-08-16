@@ -1,4 +1,4 @@
-![Upload Python Package](https://github.com/jackton1/graphene-django-precommit-hook/workflows/Upload%20Python%20Package/badge.svg)
+![Upload Python Package](https://github.com/tj-pre-commit/graphene-django-precommit-hook/workflows/Upload%20Python%20Package/badge.svg)
 # graphene-django-precommit-hook
 [pre-commit](https://pre-commit.com) hook to generate `.graphql` | `.json` graphql schema for [graphene-django](https://github.com/graphql-python/graphene-django).
 
@@ -11,7 +11,7 @@ See [pre-commit](https://github.com/pre-commit/pre-commit) for instructions
 Sample basic `.pre-commit-config.yaml`
 
 ```yaml
--   repo: https://github.com/jackton1/graphene-django-precommit-hook
+-   repo: https://github.com/tj-pre-commit/graphene-django-precommit-hook
     rev: v0.1.0
     hooks:
       - id: graphene-django-hook
@@ -22,7 +22,7 @@ Sample basic `.pre-commit-config.yaml`
 Sample complex `.pre-commit-config.yaml`
 
 ```yaml
--   repo: https://github.com/jackton1/graphene-django-precommit-hook
+-   repo: https://github.com/tj-pre-commit/graphene-django-precommit-hook
     rev: v0.1.0
     hooks:
       - id: graphene-django-hook
