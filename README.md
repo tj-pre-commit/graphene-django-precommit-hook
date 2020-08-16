@@ -1,4 +1,3 @@
-![Upload Python Package](https://github.com/tj-pre-commit/graphene-django-precommit-hook/workflows/Upload%20Python%20Package/badge.svg)
 # graphene-django-precommit-hook
 [pre-commit](https://pre-commit.com) hook to generate `.graphql` | `.json` graphql schema for [graphene-django](https://github.com/graphql-python/graphene-django).
 
