@@ -11,7 +11,7 @@ Sample basic `.pre-commit-config.yaml`
 
 ```yaml
 -   repo: https://github.com/tj-pre-commit/graphene-django-precommit-hook
-    rev: v0.1.0
+    rev: v2.0.0
     hooks:
       - id: graphene-django-hook
         stages: [commit]
@@ -22,7 +22,7 @@ Sample complex `.pre-commit-config.yaml`
 
 ```yaml
 -   repo: https://github.com/tj-pre-commit/graphene-django-precommit-hook
-    rev: v0.1.0
+    rev: v2.0.0
     hooks:
       - id: graphene-django-hook
         stages: [commit]
