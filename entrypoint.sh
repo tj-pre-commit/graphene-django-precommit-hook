@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-python manage.py graphql_schema
+python manage.py graphql_schema $*
