@@ -1,5 +1,5 @@
 # graphene-django-precommit-hook
-[pre-commit](https://pre-commit.com) hook to generate `.graphql` | `.json` graphql schema for [graphene-django](https://github.com/graphql-python/graphene-django).
+[pre-commit](https://pre-commit.com) hook to generate your graphql schema for [graphene-django](https://github.com/graphql-python/graphene-django).
 
 
 ## As a pre-commit hook
